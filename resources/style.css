@@ -1,0 +1,88 @@
+* {
+    font-family: helvetica, sans-serif;
+    margin: 0;
+}
+
+header {
+    background: seashell;
+    color: black;
+    text-align: center;
+}
+
+header > h1 {
+    padding: 20px;
+}
+
+body {
+    background: midnightblue;
+    color: seashell;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#scoreboard {
+    border: solid seashell;
+    margin: 30px auto;
+    width: 150px;
+    padding: 25px;
+    font-size: 46px;
+    border-radius: 5%;
+    position: relative;
+}
+
+.label {
+    background: red;
+    font-size: 20px;
+    width: 100px;
+}
+
+#user-label {
+    position: absolute;
+    top: 40px;
+    left: -55px;
+}
+
+#comp-label {
+    position: absolute;
+    top: 40px;
+    right: -55px;
+}
+
+.result > p{
+    font-size: 46px;;
+}
+
+#choices {
+    margin: 30px;
+}
+
+.choice {
+    display: inline-block;
+    margin: 20px;
+}
+
+img {
+    border: solid seashell;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+.green-border {
+    border: solid 10px darkgreen;
+    box-shadow: 10px green;
+}
+
+.red-border {
+    border: solid 10px darkred;
+    box-shadow: 10px red;
+}
+
+.grey-border {
+    border: solid 10px darkgrey;
+    box-shadow: 10px grey;
+}
