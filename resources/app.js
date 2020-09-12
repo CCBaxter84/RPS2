@@ -2,7 +2,7 @@
 let userScore = 0;
 let computerScore = 0;
 
-//cache the DOM
+// Cache the DOM
 const userScore_span = document.getElementById('user-score');
 const computerScore_span = document.getElementById('comp-score');
 const result_section = document.querySelector(".result > p");
@@ -10,14 +10,14 @@ const rock_img = document.getElementById("rock");
 const paper_img = document.getElementById("paper");
 const scissors_img = document.getElementById("scissors");
 
-//create getComputerChoice function
+// Create getComputerChoice function
 function getComputerChoice() {
     const choices = ['rock', 'paper', 'scissors'];
     const randomNumber = Math.floor(Math.random() * 3);
     return choices[randomNumber];
 }
 
-//create win function
+// Create win function
 function win(userChoice, computerChoice) {
     userScore++;
     userScore_span.innerHTML = userScore;
@@ -28,7 +28,7 @@ function win(userChoice, computerChoice) {
     setTimeout(function(){document.getElementById(userChoice).classList.remove('green-border')}, 1000);
 }
 
-//create lose function
+// Create lose function
 function lose(userChoice, computerChoice) {
     computerScore++;
     computerScore_span.innerHTML = computerScore;
@@ -39,7 +39,7 @@ function lose(userChoice, computerChoice) {
     setTimeout(function(){document.getElementById(userChoice).classList.remove('red-border')}, 1000);
 }
 
-//create draw function
+// Create draw function
 function draw(userChoice) {
     result_section.innerHTML = "It's a tie. Go again.";
     document.getElementById(userChoice).classList.add('grey-border');
@@ -48,7 +48,7 @@ function draw(userChoice) {
 }
 
 
-//create the game function
+// Create the game function
 function game(userChoice) {
     const computerChoice = getComputerChoice();
     switch(userChoice + computerChoice) {
@@ -71,7 +71,7 @@ function game(userChoice) {
 }
 
 
-//create the main function
+// Create the main function
 function main() {
     rock_img.addEventListener("click", function() {
         game('rock');

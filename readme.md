@@ -1,0 +1,1 @@
+This is a simple Rock, Paper, Scissors game. It is designed to be played by one player against the computer. Each time the user clicks an icon for rock, paper, or scissors a comparison is done between the user's choice and a randomly chosen computer choice. The scoreboard at the top of the page keeps score.
